@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:600&display=swap');
+
+html, body {
+  height:100%;
+}
+body {
+  font-family: 'Montserrat', sans-serif;
+  align-items:center;
+}
+.small-middle-container{
+  margin: auto;
+  width: 40%;
+}
+
+.borderDiv {
+  min-height: 400px;
+  border-style: solid;
+  border-width: 3px;
+  border-color: #BECADF;
+  border-radius: 7px;
+}
+
+.tabText {
+  font-size: 15px;
+  font-weight: bold;
+  color: #FC540A;
+}
+
+.tabText.active {
+  color: #BFCCDE;
+}
+.my-card {
+  position: relative;
+  height: 100px;
+  width: 100px;
+  border: black solid 1px;
+  border-radius: 10px;
+  margin: 15px;
+  box-shadow: 0px 0px 0px 3px #fff inset;
+}
+
+.header-content {
+  color: white;
+  opacity: 35%;
+  font-size: 40px;
+  position: absolute;
+  bottom: 0px;
+  left: 12px;
+}
+
+.border {
+  border: solid 1px #f06d06;
+  padding: 5px;
+  background-clip: content-box; /* support: IE9+ */
+  background-color: #ccc;
+}
+.card-horizontal {
+  display: flex;
+  flex: 1 1 auto;
+}
+
+.bullet:before {
+  content:"• ";
+}
+
+.putOpacity {
+  opacity: 50%;
+}
