@@ -4,7 +4,7 @@ import React from 'react';
 
 export default ({ font: { abbr, label, id, color }, onAddPost, selectedFont}) => {
     return (
-        <div className="" onClick={() => onAddPost(id)}>
+        <div className="col-sm-12 col-md-6 font" onClick={() => onAddPost(id)}>
             <div className="card-horizontal">
                 <div className="img-square-wrapper">
                     <div className="my-card" style={{background: color}}>

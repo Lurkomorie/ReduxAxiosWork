@@ -10,7 +10,7 @@ function NewPost({ data, selectedFont, onAddPost }) {
     }
     if(data.type === 'Font selection') {
         return (
-            <div >
+            <div className="card-columns row mt-3">
             {data.content.map((item) => {
                 return (
                     <Font font={ item } onAddPost={ onAddPost } selectedFont={selectedFont} key={ item.id } />
