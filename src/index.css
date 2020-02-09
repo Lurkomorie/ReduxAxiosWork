@@ -10,6 +10,7 @@ body {
 .small-middle-container{
   margin: auto;
   width: 40%;
+  min-width: 400px;
 }
 
 .borderDiv {

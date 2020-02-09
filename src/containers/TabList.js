@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import Post from '../components/Tab';
+import Tab from '../components/Tab';
 import {selectedTab, selectTab} from '../actions';
 
 
@@ -15,13 +15,13 @@ function TabList({ tabs, onClick, selectedTab }) {
     )
   }
   return (
-      <ul className="nav ">
+      <div className="row justify-content-end">
       {tabs.map(tab => {
         return (
-          <Post selectedTab={selectedTab} tab={ tab } onClick={ onClick } key={ tab.id } />
+          <Tab selectedTab={selectedTab} tab={ tab } onClick={ onClick } key={ tab.id } />
         );
       })}
-    </ul>
+    </div>
   );
 }
 
